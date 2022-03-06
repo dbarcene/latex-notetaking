@@ -1,0 +1,24 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[spanish]{babel}
+\usepackage{tabular}
+\usepackage{multicol}
+\usepackage{lstlisting}
+\usepackage{amsmath, amssymb}
+\usepackage[hidelinks]{hyperref}
+\usepackage[backend=biber, style=apa]{biblatex}
+\addbibresource{/home/dbarcene/Documents/latex-docs/bibliography/ref.bib}
+
+
+% figure support
+\usepackage{graphicx}
+\graphicspath{ {./figures} }
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+	\def\svgwidth{\columnwidth}
+	\import{./figures/}{#1.pdf_tex}
+}
